@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.images img {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  text-align: center;
+  display: none;
+}
+
+.images img.current-img {
+  display: block;
+}
+
+.next:hover,
+.prev:hover,
+.bullets i:hover{
+  color: lightgreen;
+  cursor: pointer;
+}
+
+.slider {
+  margin-top: 100px;
+  position: relative;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider i {
+  font-size: 26px;
+  padding: 0 10px;
+}
+
+.bullets{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bullets i{
+    margin: 0 5px;
+}
